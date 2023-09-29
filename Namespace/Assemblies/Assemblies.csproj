@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+	  <RuntimeIdentifier>win10-x64</RuntimeIdentifier> 
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+	<ItemGroup>
+		<Using Include="System.Console" Static="true" />
+	</ItemGroup>
+	<ItemGroup>
+		<Using Remove="System" />
+	</ItemGroup>
+	<ItemGroup>
+	  <Folder Include="ControlSDK\" />
+	</ItemGroup>
+</Project>
+
+
+<!--
+assembly: System.Runtime.dll; namespace: System,System.collections,System.collections.generic; types: int32,string,ienumerable<t>
+
+
+-->
