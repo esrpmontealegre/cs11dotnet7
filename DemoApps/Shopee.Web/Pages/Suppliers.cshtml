@@ -1,4 +1,5 @@
 ﻿@page
+@using Demo.Shared
 @model Shopee.Web.Pages.SuppliersModel
 
 <div class="row">
@@ -9,18 +10,30 @@
 		<thead class="thead-inverse">
 			<tr>
 				<th>
-					Firm Name
+					Company Name 
+				</th>
+				<th>
+					Country
+				</th>
+				<th>
+					Phone
 				</th>
 			</tr>
 		</thead>
 		<tbody>
 			@if(Model.Suppliers is not null)
 			{
-				@foreach(string name in Model.Suppliers)
+				@foreach(Supplier s in Model.Suppliers)
 				{
 					<tr>
 						<td>
-							@name
+							@s.CompanyName
+						</td>
+						<td>
+							@s.Country
+						</td>
+						<td>
+							@s.Phone
 						</td>
 					</tr>
 				}

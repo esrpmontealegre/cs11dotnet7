@@ -20,6 +20,11 @@
   <ItemGroup>
 	  <Using Include="System.Console" Static="true" />
   </ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference
+			Include="..\Shopee.Common.DataContext.Sqlite\Shopee.Common.DataContext.Sqlite.csproj" />
+	</ItemGroup>
 	
 	
 	

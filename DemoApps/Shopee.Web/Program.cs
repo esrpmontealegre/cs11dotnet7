@@ -1,6 +1,8 @@
+using Demo.Shared;
+
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
-
+builder.Services.AddShopeeContext();
 
 var app = builder.Build();
 
@@ -14,6 +16,7 @@ app.UseDefaultFiles();//should come before static files
 app.UseStaticFiles();
 
 app.MapRazorPages();
+
 app.MapGet("/hello", () => "Hello World!");
 
 app.Run();

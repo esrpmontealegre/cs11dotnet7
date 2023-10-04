@@ -13,7 +13,4 @@
 		<ProjectReference
 			Include="..\Shopee.Common.EntityModels.Sqlite\Shopee.Common.EntityModels.Sqlite.csproj" />
 	</ItemGroup>
-	
-	
-
 </Project>
