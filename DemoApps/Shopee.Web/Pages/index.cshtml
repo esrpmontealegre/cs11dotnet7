@@ -1,0 +1,24 @@
+﻿@page
+@functions
+{
+    public string? DayToday{get;set;}
+    public void OnGet()
+    {
+           ViewData["Title"] = "Shopee B2B";
+           Model.DayToday = DateTime.Now.ToString("dddd");
+    }
+
+}
+
+
+<div class="jumbotron">
+    <h1 class="display-3"> Salamat shopee! </h1>
+    <p class="lead"> We like to move it move it </p>
+    <hr />
+    <p>It's @Model.DayToday! </p>
+
+    <p>
+        <a class="btn btn-primary" href="suppliers">More about our Suppliers</a>
+    </p>
+</div>
+
