@@ -7,17 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Remove="Pages\Shared\_Layout.cshtml" />
-    <Content Remove="Pages\_ViewStart.cshtml" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="Pages\Shared\_Layout.cshtml" />
-    <None Include="Pages\_ViewStart.cshtml" />
-  </ItemGroup>
-	
-	
-  <ItemGroup>
 	  <Using Include="System.Console" Static="true" />
   </ItemGroup>
 

@@ -1,0 +1,17 @@
+﻿@page
+@using Demo.Shared
+@inject ShopeeContext db
+@{
+	string title = "Orders";
+	ViewData["Title"] = $"Shopee B2B-{title}";
+
+}
+
+<div class="row">
+	<h1 class="display-2">
+		@title
+	</h1>
+	<p>
+		There are @db.Orders.Count() Orders in Shopee DB.
+	</p>
+</div>

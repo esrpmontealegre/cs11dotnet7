@@ -1,7 +1,8 @@
 ﻿@page
 @using Demo.Shared
-@model Shopee.Web.Pages.SuppliersModel
 
+@model Shopee.Web.Pages.SuppliersModel
+@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
 <div class="row">
 	<h1 class="display-2">
 		Suppliers
@@ -41,6 +42,28 @@
 		</tbody>
 
 	</table>
+	<div class="row">
+		<p>
+			Input Details of new supplier: 
+
+		</p>
+		<form method="POST">
+			<div>
+				<input asp-for="Supplier.CompanyName" placeholder="Company Name"/>
+			</div>
+			<div>
+				<input asp-for="Supplier.Country" placeholder="Country" />
+			</div>
+			<div>
+				<input asp-for="Supplier.Phone" placeholder="Phone" />
+			</div>
+			<input type="submit"/>
+		</form>
+	</div>
 </div>
+
+
+
+
 
 

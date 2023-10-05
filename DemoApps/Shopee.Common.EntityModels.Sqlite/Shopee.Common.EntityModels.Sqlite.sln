@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shopee.Common.DataContext.S
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shopee.Common.UnitTests", "..\Shopee.Common.UnitTests\Shopee.Common.UnitTests.csproj", "{BBC2902A-8AAB-4890-86C4-938E50D177E6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shopee.Web", "..\Shopee.Web\Shopee.Web.csproj", "{C1C83A12-413F-4DC4-92AD-B444047C0AD2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shopee.Web", "..\Shopee.Web\Shopee.Web.csproj", "{C1C83A12-413F-4DC4-92AD-B444047C0AD2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
